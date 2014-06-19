@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ShoppingCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShoppingCart</h2>
+
+<table style="width:75%">
+    <tr><th>Product</th><th>Price</th><th>Quantity</th></tr>
+    @foreach(var p in @ViewBag.Cart) 
+    { 
+        <tr><td>@p.Key.Name</td><td>$@p.Key.Price</td><td>@p.Value</td></tr>
+    } 
+ </table>
