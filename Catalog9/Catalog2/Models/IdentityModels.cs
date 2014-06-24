@@ -1,0 +1,28 @@
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+
+namespace Catalog2.Models
+{
+    // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
+    public class ApplicationUser : IdentityUser
+    {
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string EmailAddress { get; set; }
+
+        public string StreetAddress { get; set; }
+
+        public string City { get; set; }
+
+        public int Zip { get; set; }
+    }
+
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+        public ApplicationDbContext()
+            : base("DefaultConnection")
+        {
+        }
+    }
+}
