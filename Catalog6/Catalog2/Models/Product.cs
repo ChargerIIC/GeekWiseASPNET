@@ -6,16 +6,7 @@ using System.Web;
 
 namespace Catalog2.Models
 { 
-    //Explain Entity Framework and that we'll be doing this code-first
-    //Explain difference between code first and database first
-    //Rename FakeModel to ShoppingCart.cs and remove singleton attributes
-    //Add CartId
-    //Install Entity Framework via nuget
-    //Create ProductContext
-    //Create DbSets for Product/ShoppingCart
-    //Modify Product Controller to use Model
-    //Take a break
-    //Modify Index view to use model - use foreach
+    
     public class Product
     {
         public Product(int id,string name, int quanity, Decimal price)
